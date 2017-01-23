@@ -11,9 +11,9 @@ class TestMMDivisionFunctions < Minitest::Test
 		assert_equal(1, div(3,2)) #test delib illogical :)but wil pass
 	end
 
-	#def test_10_div_ZERO_eq_??()
-	#	assert_equal( , mult(10, 0))
-	#end
+	def test_10_div_ZERO_eq_blah()
+		assert_equal('Cannot divide by zeri', div(10, 0))
+	end
 
 	def test_12_div_neg4_is_neg3()
 		assert_equal(-3, div(12, -4))
