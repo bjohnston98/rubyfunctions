@@ -14,6 +14,12 @@ class TestMMFunctions < Minitest::Test #as b4
 
 	def test_add_2_plus_3_returns_five
 		assert_equal(5, add(2,3))
+	
+		# puts add(2,3)  for screen output
+	end
+
+	def test_add_20_plus_one_returns_21
+		assert_equal(21, add(20,1))
 	end
 
 end
