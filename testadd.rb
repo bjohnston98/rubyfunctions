@@ -22,5 +22,9 @@ class TestMMFunctions < Minitest::Test #as b4
 		assert_equal(21, add(20,1))
 	end
 
+	def test_add_10_plus_minus_10_eq_zero
+		assert_equal(0, add(10,-10))
+	end
+
 end
 
